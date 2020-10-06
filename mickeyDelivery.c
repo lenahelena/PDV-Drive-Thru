@@ -86,20 +86,24 @@ return (0);
 	switch (pedido){
 		case '1':
 		precoCombo = 10; 
-		printf("Quantos combos pequenos você vai querer?");
-		scanf("%f", &quantidadeComboPedido);	
+		printf("Quantos combos pequenos você vai querer?\n");
+		scanf("%d", &quantidadeComboPedido);	
 		
 	//	printf("O valor do seu pedido é de R$%.2f", valorTotalCombo);
 		break;
 		
 		case '2':
-		precoCombo = 1;
-		printf("Quantos combos médios você vai querer?");
+		precoCombo = 15;
+		printf("Quantos combos médios você vai querer?\n");
 		scanf("%d", &quantidadeComboPedido);
-		valorTotalCombo = precoCombo * quantidadeComboPedido;
+		//valorTotalCombo = precoCombo * quantidadeComboPedido;
 	//	printf("O valor do seu pedido é de R$%.2f", valorTotalCombo);
 		break; 
 		
+		case '3':
+		precoCombo = 20;
+		printf("Quantos combos grandes você vai querer?\n");
+		scanf("%d", &quantidadeComboPedido);
 	}
 	
 	valorTotalCombo = precoCombo * quantidadeComboPedido;
